@@ -153,8 +153,9 @@ class Products extends RestController
             ], RestController::HTTP_OK);
         } else {
             $this->response([
-                'status' => false,
-            ], RestController::HTTP_NOT_FOUND);
+                'status' => true,
+                'data' => 0
+            ], RestController::HTTP_OK);
         }
     }
 
